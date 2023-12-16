@@ -5,10 +5,15 @@ import difflib
 from sklearn.feature_extraction.text import TfidfVectorizer
 #used for similarity values 
 from sklearn.metrics.pairwise import cosine_similarity
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+
+MOVIES_PATH=os.getenv("MOVIES_PATH")
 
 #loading data from csv file to a pandas datafram
-movies_data=pd.read_csv('/Users/maturiabhinaygoud/ML_Projects/MovieRecommendation /movies.csv')
+movies_data=pd.read_csv(MOVIES_PATH)
 #printing first five rows of the dataframe
 # print(movies_data.head())
 
