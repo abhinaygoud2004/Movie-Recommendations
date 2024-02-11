@@ -1,2 +1,40 @@
+# .gitignore
+
+# Python-specific
+__pycache__/
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Environment variable file
 .env
+
+# Virtual environment
+venv/
 env/
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Compiled Python files
+*.pyc
+
+# Compiled C extension files
+*.so
+
+# Logs
+*.log
